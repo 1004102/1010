@@ -293,7 +293,7 @@
                     </div>
                 </div>
                 <p class="ddd">주소 : 인천 중구 용유서로479번길 42 메이드림</p>
-                <div id="map" style="width:470px; height:220px;"></div>
+                <div id="map" style="width:470px; height:220px; magin-left:30px;"></div>
                 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=f829d6fcd1bafef5e4df5d58e663437c"></script>
                 <script>
                     var container = document.getElementById('map');
@@ -303,6 +303,11 @@
                     };
                 
                     var map = new kakao.maps.Map(container, options);
+                    var markerPosition = new kakao.maps.LatLng(37.463771, 126.3697684);
+                    var marker = new kakao.maps.Marker({
+                        position: markerPosition
+                    });
+                    marker.setMap(map);
                 </script>
             </div>
         </div>
