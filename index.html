@@ -210,7 +210,7 @@
     }
 
     .map {
-        margin: 0px 0px 0px 70px;
+        margin: 0px 0px 0px 30px;
     }
 </style>
 
@@ -293,22 +293,10 @@
                     </div>
                 </div>
                 <p class="ddd">주소 : 인천 중구 용유서로479번길 42 메이드림</p>
-                <div id="map" style="width:470px; height:220px; magin-left:30px;"></div>
-                <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=f829d6fcd1bafef5e4df5d58e663437c"></script>
-                <script>
-                    var container = document.getElementById('map');
-                    var options = {
-                        center: new kakao.maps.LatLng(33.450701, 126.570667),
-                        level: 3
-                    };
-                
-                    var map = new kakao.maps.Map(container, options);
-                    var markerPosition = new kakao.maps.LatLng(37.463771, 126.3697684);
-                    var marker = new kakao.maps.Marker({
-                        position: markerPosition
-                    });
-                    marker.setMap(map);
-                </script>
+                <div class="map">
+                    <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FBW7Rt%2FbtsGzgHr8NL%2Foe1G1kxY8MDT1EEq5BRpu0%2Fimg.png"
+                        alt="Map" width="470px" height="220px">
+                </div>
             </div>
         </div>
     </div>
